@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { PROFILEPHOTO } from "../utils/constants";
+import { BACKGROUND_IMG_URL, PROFILEPHOTO } from "../utils/constants";
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
@@ -84,10 +84,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/f0b42cac-9ced-425f-8677-777eadbdbe2f/web/IN-en-20261005-TRIFECTA-perspective_14c6dcd8-c058-4841-a0e5-1d0d70b35836_large.jpg"
-          alt="body-images"
-        />
+        <img src={BACKGROUND_IMG_URL} alt="Background-image-login" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

@@ -34,6 +34,10 @@
 - found out tmdb img_cdn_url
 - made the browse page look gud with tailwind css
 - create the usePopularMovies custom hook
+- GPT search feature
+- GPT search bar
+- (BONUS) --> added a multilingual(multi-language) feature in our app.
+- Integrate GPT API's (get open AI key).
 
 # Features
 
